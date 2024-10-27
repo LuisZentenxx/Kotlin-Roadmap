@@ -50,7 +50,7 @@ fun main(){
 
     // Usando when
     when (dia) {
-        in 1..5 -> println("Es un día laboral.")
+        in 1..5 -> println("Es un día laboral")
         6, 7 -> println("Es fin de semana.")
         else -> println("Número no válido.")
     }
