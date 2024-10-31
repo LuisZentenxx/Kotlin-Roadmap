@@ -1,10 +1,87 @@
 package com.luiszentenxx._01_Fundamentals._05_DataStructures
 
+import org.w3c.dom.ranges.Range
+
 fun main() {
 
+    excercise1()
+    excercise2()
+    excercise3()
+    excercise4()
+    excercise5()
+    excercise6()
+    excercise7()
+    excercise8()
+    excercise9()
+
+}
+
+private fun excercise1(){
+
+    // Crear una lista inmutable y luego, imprimir el primer y último elemento de la lista
+
+    val fruits = listOf("Manzana", "Naranja", "Kiwi", "Melón")
+    println(fruits.first())
+    println(fruits.last())
+}
+
+private fun excercise2(){
+
+    // Crea una lista inmutable y luego, imprime el tamaño de la lista y verifica si el número 10 está.
+    val numbList = listOf(1,6,10,43,2,5,24)
+    println(numbList.size)
+    println(numbList.contains(10))
+}
+
+private fun excercise3(){
+
+    // Crea una lista de colores y luego, imprime el índice del color "Azul" y el índice del color "Negro".
+    val colors = listOf("Rojo", "Amarillo", "Azul", "Blanco")
+    println(colors.indexOf("Azul"))
+    println(colors.indexOf("Negro"))
+}
+
+private fun excercise4(){
+
+    val intNumbers = (1..10).toList()
+    println(intNumbers.filter { it % 2 == 0 })
+    println(intNumbers.map { it * 2 })
+}
+
+private fun excercise5(){
+
+    val weeksDay = listOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado", "Domingo")
+    println(weeksDay.take(3))
+    println(weeksDay.drop(3))
+}
+
+private fun excercise6() {
+
+    val names = listOf("Juan", "Luis", "Amanda", "Víctor")
+    val surNames = listOf("Pérez", "Suárez", "Rojas", "Jara")
+    println(names.zip(surNames))
+}
+
+private fun excercise7(){
+
+    val chars = listOf('A','B','C','A','C','C','A','B','R')
+    println(chars.count { it == 'A'})
+}
+
+private fun excercise8(){
+
+    val countries = listOf("Chile", "Italia", "Alemania", "Brasil", "Colombia")
+    println(countries.slice(1..3))
+}
+
+private fun excercise9(){
+
+    val languages = listOf("Kotlin", "Python", "C++", "Java", "Elixir")
+    println(languages.joinToString(" "))
+}
+private fun examples(){
     val numberList = listOf(1, 4, 7, 2, 21, 43, 0, 32, 4, 6)
     val stringList = listOf("Kotlin", "Java", "Python", "Javascript y Typescript", "Kotlin", "")
-
 
     // [Index] Accede al elemento que está en el indice indicado.
     println(numberList[4])
