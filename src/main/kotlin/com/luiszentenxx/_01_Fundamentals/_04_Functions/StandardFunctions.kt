@@ -21,7 +21,6 @@ fun main() {
 
 }
 
-
 // 1. Función sin parámetros ni retorno
 fun mostrarMensaje(){
     println("¡Hola, Kotlin!")

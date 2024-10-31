@@ -44,5 +44,7 @@ fun calculo2(b: Int, h:Int, calculos:(Int, Int) -> Int) : Int {
 fun oddEven2(n:Int) : Boolean = n % 2 == 0
 
 // 4. Conversión de Temeperatura
-
 fun converter(t:Float, convertion:(Float) -> Float) = convertion(t)
+
+// 5. Suma de una lista con una función lambda
+
