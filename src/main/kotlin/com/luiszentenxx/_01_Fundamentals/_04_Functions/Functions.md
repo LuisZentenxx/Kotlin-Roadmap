@@ -5,6 +5,8 @@ Las funciones son **bloques de código reutilizables** que realizan una tarea es
 Imagina que las funciones son como pequeñas máquinas que realizan tareas específicas en tu programa.
 Una vez que construyes una función, puedes **usarla tantas veces como quieras sin tener que volver a construirla**. Esto hace que tu código sea más limpio y fácil de entender.
 
+En Kotlin, las funciones son ciudadanos de primera clase, lo que significa que pueden ser tratadas como cualquier otro tipo de dato, como números o cadenas. Esto incluye la posibilidad de asignar funciones a variables, pasarlas como argumentos y devolverlas desde otras funciones.
+
 ## ¿Por qué son útiles las Funciones?
 
 - **Reutilización**: Escribes una vez el código de la función y puedes usarlo muchas veces.
@@ -118,3 +120,22 @@ val resultado = sumarLambda(3, 5)  // resultado será 8
 
 
 6. `a + b`: Esta es la acción que la función lambda llevará a cabo. En este caso, suma ``a`` y `b` y devuelve el resultado.
+
+### 4. Lambda Anónima
+Las funciones lambda anónimas en Kotlin son expresiones de código que **no tienen un nombre** y que puedes usar para realizar tareas específicas. 
+
+Se llaman **anónimas** porque, a diferencia de las funciones normales, no están asociadas a un nombre específico. 
+Son útiles cuando necesitas una **función temporal que no tendrás que reutilizar**.
+
+#### ¿Cuándo se usa una función lambda anónima?
+Se usan cuando:
+- Necesitas una función rápidamente para una tarea puntual y no quieres crear una función completa.
+
+
+- Vas a pasar la función como parámetro a otra función y no necesitas reutilizarla.
+
+#### Ejemplo básico
+```kotlin
+val resultado = run { 5 + 10}
+println(resultado) // Imprime 15
+```
